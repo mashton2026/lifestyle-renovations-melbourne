@@ -1,6 +1,29 @@
+import React, { useEffect } from 'react';
 import './App.css';
 
 function App() {
+
+  useEffect(() => {
+    const reveals = document.querySelectorAll('.reveal');
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      },
+      {
+        threshold: 0.15,
+      }
+    );
+
+    reveals.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="site">
       <header className="navbar">
@@ -81,7 +104,7 @@ function App() {
         </div>
       </section>
 
-      <section className="projects-section" id="projects">
+      <section className="projects-section reveal" id="projects">
         <div className="projects-header">
           <p className="section-label">Featured Projects</p>
           <h2>Recent Transformations</h2>
@@ -128,7 +151,7 @@ function App() {
         </div>
       </section>
 
-      <section className="showcase-section">
+      <section className="showcase-section reveal">
         <div className="showcase-header">
           <p className="section-label">Featured Commercial Project</p>
 
@@ -163,7 +186,7 @@ function App() {
         </div>
       </section>
 
-      <section className="testimonial-section">
+      <section className="testimonial-section reveal">
         <div className="testimonial-image">
           <img
             src="/images/commercial/commercial-showroom.jpg"
@@ -172,7 +195,8 @@ function App() {
         </div>
 
         <div className="testimonial-content">
-          <p className="section-label">Client Testimonial</p>
+          <p className="section-label">Featured Commercial Project</p>
+          <p className="testimonial-project-label">Commercial Showroom Fit-Out</p>
 
           <blockquote>
             George is trustworthy, reliable, and someone you can genuinely
@@ -200,13 +224,7 @@ function App() {
         </div>
       </section>
 
-      <section className="about-section" id="about">
-        <div className="about-image">
-          <img
-            src="/images/about/george-koustoulidis-portrait.png"
-            alt="George Koustoulidis"
-          />
-        </div>
+      <section className="about-section reveal" id="about">
 
         <div className="about-content">
           <p className="section-label">About Lifestyle Renovations</p>
@@ -218,7 +236,7 @@ function App() {
           <p>
             At Lifestyle Renovations Melbourne, we believe exceptional spaces are
             created through experience, craftsmanship and attention to detail.
-            Led by George Koustoulidis, a Victorian Registered Builder with almost
+            Led by George, a Victorian Registered Builder with almost
             three decades of industry experience, we deliver premium residential
             renovations and commercial fit-outs that combine quality construction
             with lasting value. From concept to completion, every project reflects
@@ -227,7 +245,7 @@ function App() {
 
           <p>
             With almost 30 years of hands-on experience in the building industry,
-            George Koustoulidis has built a reputation for delivering exceptional
+            George has built a reputation for delivering exceptional
             workmanship, practical solutions and quality results across both
             residential and commercial projects.
           </p>
@@ -284,7 +302,50 @@ function App() {
         </div>
       </section>
 
-      <section className="services-section" id="services">
+      <section className="process-section reveal" id="process">
+        <div className="process-header">
+          <p className="section-label">Our Process</p>
+          <h2>From Consultation To Handover</h2>
+          <p>
+            Every project is guided through a clear, practical process so clients feel informed,
+            confident and supported from start to finish.
+          </p>
+        </div>
+
+        <div className="process-timeline">
+          <div className="process-step">
+            <span>01</span>
+            <h3>Consultation</h3>
+            <p>We discuss your ideas, requirements, budget and the overall direction of the project.</p>
+          </div>
+
+          <div className="process-step">
+            <span>02</span>
+            <h3>Planning</h3>
+            <p>Layouts, finishes and practical details are considered before work begins.</p>
+          </div>
+
+          <div className="process-step">
+            <span>03</span>
+            <h3>Quotation</h3>
+            <p>You receive clear pricing and advice so you understand what is involved.</p>
+          </div>
+
+          <div className="process-step">
+            <span>04</span>
+            <h3>Construction</h3>
+            <p>The work is carried out with care, communication and attention to detail.</p>
+          </div>
+
+          <div className="process-step">
+            <span>05</span>
+            <h3>Handover</h3>
+            <p>Final details are checked so the finished result is clean, complete and ready to enjoy.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="services-section reveal" id="services">
         <div className="services-header">
           <p className="section-label">Our Services</p>
           <h2>Renovations Built Around Quality & Craftsmanship</h2>
@@ -325,7 +386,9 @@ function App() {
         </div>
       </section>
 
-      <section className="why-section">
+
+
+      <section className="why-section reveal">
         <div className="why-intro">
           <p className="section-label">Why Choose Us</p>
 
@@ -370,7 +433,7 @@ function App() {
 
       </section>
 
-      <section className="contact-section" id="contact">
+      <section className="contact-section reveal" id="contact">
         <div className="contact-content">
           <p className="section-label">Request a Quote</p>
 
