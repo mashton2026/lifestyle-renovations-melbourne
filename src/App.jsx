@@ -433,33 +433,36 @@ function App() {
 
       </section>
 
+      <section className="showroom-banner reveal">
+        <div className="showroom-overlay">
+          <p className="section-label">Melbourne Registered Builder</p>
+
+          <h2>
+            Built With Experience.
+            <br />
+            Crafted With Precision.
+          </h2>
+        </div>
+      </section>
+
       <section className="contact-section reveal" id="contact">
         <div className="contact-content">
-          <p className="section-label">Request a Quote</p>
+          <p className="section-label">Consultation & Quotation</p>
 
-          <h2>Ready To Discuss Your Renovation?</h2>
+          <h2>Let's Discuss Your Project</h2>
 
           <p>
-            Whether you are planning a bathroom renovation, kitchen upgrade,
-            home improvement or commercial fit-out, Lifestyle Renovations
-            Melbourne can help bring your project to life.
+            Tell us a little about your renovation or commercial fit-out and we’ll be
+            in touch to arrange a consultation.
           </p>
 
           <div className="contact-details">
-            <p>
-              <strong>Phone:</strong> +61 424 663 378
-            </p>
+            <p><strong>Phone:</strong> +61 424 663 378</p>
+            <p><strong>Email:</strong> george@lifestylealterations.com.au</p>
+            <p><strong>Location:</strong> Melbourne, Victoria</p>
 
             <p>
-              <strong>Email:</strong> george@lifestylealterations.com.au
-            </p>
-
-            <p>
-              <strong>Location:</strong> Melbourne, Victoria
-            </p>
-
-            <p>
-              <strong>Facebook:</strong>{' '}
+              <strong>Facebook:</strong>{" "}
               <a
                 href="https://www.facebook.com/share/18fjKvjQ2E/"
                 target="_blank"
@@ -469,23 +472,57 @@ function App() {
               </a>
             </p>
           </div>
+
+          <div className="contact-trust">
+            <span>✓ Almost 30 Years Experience</span>
+            <span>✓ Victorian Registered Builder</span>
+            <span>✓ Residential & Commercial Projects</span>
+            <span>✓ Clear Communication & Quality Workmanship</span>
+          </div>
         </div>
 
         <form className="contact-form">
-          <input type="text" placeholder="Your Name" />
+          <input type="text" placeholder="Full Name" />
           <input type="email" placeholder="Email Address" />
           <input type="tel" placeholder="Phone Number" />
 
-          <input
-            type="text"
-            placeholder="Suburb / Project Location"
-          />
+          <select>
+            <option>Project Type</option>
+            <option>Bathroom Renovation</option>
+            <option>Kitchen Renovation</option>
+            <option>Home Renovation</option>
+            <option>Commercial Fit-Out</option>
+            <option>Other</option>
+          </select>
 
-          <textarea placeholder="Tell us about your project"></textarea>
+          <select>
+            <option>Budget Range</option>
+            <option>Under $20,000</option>
+            <option>$20,000 – $50,000</option>
+            <option>$50,000 – $100,000</option>
+            <option>$100,000+</option>
+          </select>
 
-          <button type="submit">Request a Quote</button>
+          <input type="text" placeholder="Project Location (Suburb)" />
+
+          <select>
+            <option>Preferred Timeline</option>
+            <option>ASAP</option>
+            <option>Within 3 Months</option>
+            <option>Within 6 Months</option>
+            <option>Planning Ahead</option>
+          </select>
+
+          <textarea placeholder="Tell Us About Your Project"></textarea>
+
+          <button type="submit">Book Consultation</button>
+
+          <p className="form-note">
+            We’ll review your enquiry and get back to you to discuss the next steps.
+          </p>
         </form>
       </section>
+
       <footer className="footer">
         <div>
           <strong>Lifestyle Renovations Melbourne</strong>
