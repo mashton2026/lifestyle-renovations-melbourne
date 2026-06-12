@@ -58,7 +58,7 @@ function App() {
           <p className="hero-subtitle">Melbourne Renovation Specialists</p>
 
           <h1 className="hero-title">
-            Elegant Renovations
+            Lifestyle Renovations
             <br />
             Built With Precision
           </h1>
@@ -86,7 +86,7 @@ function App() {
             <p className="section-label">Residential</p>
             <h2>Luxury Home Renovations</h2>
             <p>
-              Bathrooms, kitchens, joinery, extensions and home improvements
+              Bathrooms, kitchens, joinery and home improvements
               finished with detail, practicality and timeless appeal.
             </p>
           </div>
@@ -159,7 +159,7 @@ function App() {
 
           <p>
             A complete commercial interior transformation featuring black feature
-            tiling, timber-look flooring, illuminated styling mirrors, wash
+            tiling, timber flooring, illuminated styling mirrors, wash
             stations and refined finishing details.
           </p>
         </div>
