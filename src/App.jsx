@@ -65,7 +65,7 @@ function App() {
 
           <p className="hero-description">
             Premium residential and commercial renovations delivered with
-            craftsmanship, care and almost 30 years of building experience.
+            craftsmanship, care and 30+ years of building experience.
           </p>
 
           <div className="hero-buttons">
@@ -164,25 +164,63 @@ function App() {
           </p>
         </div>
 
-        <div className="showcase-grid">
-          <div className="showcase-large">
+        <div className="salon-case-study">
+
+          <div className="salon-hero-image">
             <img
-              src="/images/commercial/hair-salon-finished-fitout-wide.jpg"
-              alt="Completed hair salon commercial fit-out"
+              src="/images/commercial/hair_salon_wide_enhanced.jpg"
+              alt="Completed luxury hair salon fit-out"
             />
           </div>
 
-          <div className="showcase-small">
+          <div className="salon-stage-header">
+            <p className="section-label">Construction Progress</p>
+            <h3>From Build Stage To Finished Fit-Out</h3>
+          </div>
+
+          <div className="salon-progress-grid">
+
             <img
-              src="/images/commercial/hair-salon-illuminated-mirrors.jpg"
-              alt="Hair salon illuminated mirrors"
+              src="/images/commercial/03-framing-plumbing.jpg"
+              alt="Framing and plumbing stage"
             />
 
             <img
-              src="/images/commercial/hair-salon-wash-basin-detail.jpg"
-              alt="Hair salon wash basin detail"
+              src="/images/commercial/04-sheetwork-stage.jpg"
+              alt="Sheetwork stage"
             />
+
+            <img
+              src="/images/commercial/01-black-tile-installation.jpg"
+              alt="Black tile installation"
+            />
+
+            <img
+              src="/images/commercial/02-flooring-installation.jpg"
+              alt="Flooring installation"
+            />
+
           </div>
+
+          <div className="salon-stage-header">
+            <p className="section-label">Completed Fit-Out</p>
+            <h3>Finished Salon Interior</h3>
+          </div>
+
+          <div className="salon-finished-grid">
+
+            <img
+              src="/images/commercial/hair_salon_wash_area_enhanced.jpg"
+              alt="Salon wash area"
+            />
+
+            <img
+              src="/images/commercial/hair_salon_mirrors_enhanced.jpg"
+              alt="Salon mirrors"
+            />
+
+          </div>
+
         </div>
       </section>
 
@@ -244,7 +282,7 @@ function App() {
           </p>
 
           <p>
-            With almost 30 years of hands-on experience in the building industry,
+            With 30+ years of hands-on experience in the building industry,
             George has built a reputation for delivering exceptional
             workmanship, practical solutions and quality results across both
             residential and commercial projects.
@@ -282,7 +320,7 @@ function App() {
 
       <section className="credentials-section">
         <div className="credential-item">
-          <strong>Almost 30 Years</strong>
+          <strong>Over 30 Years</strong>
           <span>Industry Experience</span>
         </div>
 
@@ -474,7 +512,7 @@ function App() {
           </div>
 
           <div className="contact-trust">
-            <span>✓ Almost 30 Years Experience</span>
+            <span>✓ With 30+ Years Experience</span>
             <span>✓ Victorian Registered Builder</span>
             <span>✓ Residential & Commercial Projects</span>
             <span>✓ Clear Communication & Quality Workmanship</span>
