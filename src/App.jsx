@@ -225,41 +225,57 @@ function App() {
       </section>
 
       <section className="testimonial-section reveal">
-        <div className="testimonial-image">
-          <img
-            src="/images/commercial/commercial-showroom.jpg"
-            alt="Commercial showroom fit-out"
-          />
+
+        <div className="testimonial-centered">
+
+          <p className="section-label">FEATURED RESIDENTIAL PROJECT</p>
+
+          <h3 className="testimonial-project-label">
+            Luxury Bathroom Renovation
+          </h3>
+
+          <div className="bathroom-grid">
+
+            <img
+              src="/images/commercial/04-bathroom-completed-vanity.jpg"
+              alt="Bathroom renovation mid-build stage"
+            />
+
+            <img
+              src="/images/commercial/02-bathroom-sheetwork.jpg"
+              alt="Completed bathroom vanity"
+            />
+
+            <img
+              src="/images/commercial/05-bathroom-completed-shower.jpg"
+              alt="Completed bathroom shower"
+            />
+
+          </div>
+          <div className="testimonial-content">
+
+            <blockquote>
+              George is trustworthy, reliable, and someone you can genuinely count on — qualities that are invaluable when choosing a builder.
+            </blockquote>
+
+            <p>
+              I would thoroughly recommend George. He takes great pride in his workmanship and is not satisfied until the client is completely happy with the finished result.
+            </p>
+
+            <p>
+              George doesn't work to a one-size-fits-all template. He listens carefully, adapts to his clients' needs, offers practical advice, and can suggest alternative ideas and finishes.
+            </p>
+
+            <p>
+              He communicates well, understands what the client wants, completes the job properly, and doesn't leave loose ends behind.
+            </p>
+
+            <strong>— TIM PIPER</strong>
+
+          </div>
+
         </div>
 
-        <div className="testimonial-content">
-          <p className="section-label">Featured Commercial Project</p>
-          <p className="testimonial-project-label">Commercial Showroom Fit-Out</p>
-
-          <blockquote>
-            George is trustworthy, reliable, and someone you can genuinely
-            count on — qualities that are invaluable when choosing a builder.
-          </blockquote>
-
-          <p>
-            I would thoroughly recommend George. He takes great pride in his
-            workmanship and is not satisfied until the client is completely happy
-            with the finished result.
-          </p>
-
-          <p>
-            George doesn’t work to a one-size-fits-all template. He listens
-            carefully, adapts to his clients’ needs, offers practical advice, and
-            can suggest alternative ideas and finishes.
-          </p>
-
-          <p>
-            He communicates well, understands what the client wants, completes
-            the job properly, and doesn’t leave loose ends behind.
-          </p>
-
-          <strong>— Tim Piper</strong>
-        </div>
       </section>
 
       <section className="about-section reveal" id="about">
@@ -496,7 +512,7 @@ function App() {
 
           <div className="contact-details">
             <p><strong>Phone:</strong> +61 424 663 378</p>
-            <p><strong>Email:</strong> george@lifestylealterations.com.au</p>
+            <p><strong>Email:</strong> george@lifestylerenovationsmelbourne.com.au</p>
             <p><strong>Location:</strong> Melbourne, Victoria</p>
 
             <p>
@@ -519,13 +535,29 @@ function App() {
           </div>
         </div>
 
-        <form className="contact-form">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
-          <input type="tel" placeholder="Phone Number" />
+        <form
+          className="contact-form"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="2a56da91-3928-49b6-962e-144368fa3ebd"
+          />
 
-          <select>
-            <option>Project Type</option>
+          <input
+            type="hidden"
+            name="subject"
+            value="New enquiry from Lifestyle Renovations Melbourne website"
+          />
+
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input type="email" name="email" placeholder="Email Address" required />
+          <input type="tel" name="phone" placeholder="Phone Number" required />
+
+          <select name="project_type" required>
+            <option value="">Project Type</option>
             <option>Bathroom Renovation</option>
             <option>Kitchen Renovation</option>
             <option>Home Renovation</option>
@@ -533,25 +565,33 @@ function App() {
             <option>Other</option>
           </select>
 
-          <select>
-            <option>Budget Range</option>
+          <select name="budget_range">
+            <option value="">Budget Range</option>
             <option>Under $20,000</option>
             <option>$20,000 – $50,000</option>
             <option>$50,000 – $100,000</option>
             <option>$100,000+</option>
           </select>
 
-          <input type="text" placeholder="Project Location (Suburb)" />
+          <input
+            type="text"
+            name="project_location"
+            placeholder="Project Location (Suburb)"
+          />
 
-          <select>
-            <option>Preferred Timeline</option>
+          <select name="preferred_timeline">
+            <option value="">Preferred Timeline</option>
             <option>ASAP</option>
             <option>Within 3 Months</option>
             <option>Within 6 Months</option>
             <option>Planning Ahead</option>
           </select>
 
-          <textarea placeholder="Tell Us About Your Project"></textarea>
+          <textarea
+            name="message"
+            placeholder="Tell Us About Your Project"
+            required
+          ></textarea>
 
           <button type="submit">Book Consultation</button>
 
