@@ -106,7 +106,11 @@ function App() {
       <section className="projects-section reveal" id="projects">
         <div className="projects-header">
           <p className="section-label">Featured Projects</p>
-          <h2>Recent Transformations</h2>
+          <h2>
+            Recent
+            <br />
+            Transformations
+          </h2>
         </div>
 
         <div className="projects-grid">
@@ -561,7 +565,11 @@ function App() {
         <div className="contact-content">
           <p className="section-label">Consultation & Quotation</p>
 
-          <h2>Let's Discuss Your Project</h2>
+          <h2>
+            Let's Discuss
+            <br />
+            Your Project
+          </h2>
 
           <p>
             Tell us a little about your renovation or commercial fit-out and we’ll be

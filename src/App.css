@@ -1060,10 +1060,8 @@ html {
 @media (max-width: 900px) {
 
   .projects-header h2 {
-    font-size: 2.6rem;
+    font-size: 2.15rem;
     line-height: 1.05;
-    word-break: keep-all;
-    overflow-wrap: normal;
   }
 
 }
@@ -1543,4 +1541,96 @@ html {
     width: 100px;
     height: 80px;
   }
+}
+
+/* MOBILE TYPOGRAPHY FIX */
+
+@media (max-width: 768px) {
+
+  .hero-title {
+    font-size: 3rem;
+    line-height: 0.95;
+  }
+
+  .projects-header h2,
+  .services-header h2,
+  .why-intro h2,
+  .contact-content h2,
+  .showcase-header h2,
+  .about-content h2,
+  .process-header h2 {
+    font-size: 2.15rem;
+    line-height: 1.05;
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+
+  .split-card h2 {
+    font-size: 2.2rem;
+    line-height: 1.05;
+  }
+
+  .testimonial-content blockquote {
+    font-size: 1.7rem;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .projects-header {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .projects-header h2 {
+    font-size: 1.9rem;
+    line-height: 1.1;
+    max-width: 100%;
+  }
+
+  .projects-section {
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-header h2 {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 2.15rem !important;
+    line-height: 1.05 !important;
+    overflow-wrap: normal !important;
+  }
+
+  .projects-section {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .contact-content {
+    padding-left: 20px;
+  }
+
+  .contact-content h2 {
+    font-size: 1.9rem !important;
+    line-height: 1.1 !important;
+    display: block !important;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contact-details p,
+  .contact-details a {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
 }
