@@ -41,9 +41,8 @@ function App() {
         </a>
 
         <nav className="nav-links">
-          <a href="#residential">Residential</a>
-          <a href="#commercial">Commercial</a>
           <a href="#projects">Projects</a>
+          <a href="#gallery">Gallery</a>
           <a href="#about">About</a>
           <a href="#services">Services</a>
 
@@ -149,6 +148,65 @@ function App() {
           </div>
 
         </div>
+      </section>
+
+      <section className="gallery-section reveal" id="gallery">
+
+        <div className="gallery-header">
+          <p className="section-label">Project Gallery</p>
+
+          <h2>Craftsmanship Across Every Project</h2>
+
+          <p>
+            A collection of residential renovations, outdoor living projects,
+            heritage restorations and commercial fit-outs completed across Melbourne.
+          </p>
+        </div>
+
+        <div className="gallery-grid">
+
+          <img
+            src="/images/commercial/luxury-bathroom-renovation.jpg"
+            alt="Luxury bathroom renovation"
+          />
+
+          <img
+            src="/images/commercial/completed-alfresco-poolside-extension.jpg"
+            alt="Completed alfresco poolside extension"
+          />
+
+          <img
+            src="/images/commercial/heritage-archway-restoration.jpg"
+            alt="Heritage archway restoration"
+          />
+
+          <img
+            src="/images/commercial/hardwood-flooring-installation.jpg"
+            alt="Hardwood flooring installation"
+          />
+
+          <img
+            src="/images/commercial/alfresco-timber-batten-ceiling.jpg"
+            alt="Timber batten ceiling"
+          />
+
+          <img
+            src="/images/commercial/covered-outdoor-entertaining-area.jpg"
+            alt="Covered outdoor entertaining area"
+          />
+
+          <img
+            src="/images/commercial/commercial-showroom-wall-graphics-installation.jpg"
+            alt="Commercial showroom graphics installation"
+          />
+
+          <img
+            src="/images/commercial/automotive-showroom-wall-graphics.jpg"
+            alt="Automotive showroom wall graphics"
+          />
+
+        </div>
+
       </section>
 
       <section className="showcase-section reveal">
